@@ -23,11 +23,15 @@ main{
     padding: 40px;
 }
 
-div .creator {
+ .creator {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-top: 10%;
+    width: 100%;
+    padding: 5% 0px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+
 }
 
 ul{
@@ -35,17 +39,13 @@ ul{
     justify-content: space-between;
     width: 100%;
     margin-top: 5%;
+    
 }
 
 .creator img{
     width: 30px;
     height: 30px;
-}
-
-.creator {
-    width: 100%;
-    padding: 5% 0px;
-    border-top: 1px solid hsl(215, 32%, 27%);
+    object-fit: cover;
 }
 
 .nft {
@@ -69,7 +69,7 @@ li{
     gap: 10px;
 }
 
-h2, p, li, span{
+h2, p, li, span, .creator{
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
 }
@@ -85,7 +85,7 @@ h2, span{
     font-size: 18px;
 }
 
-p, .time{
+p, .time, .creator{
     color: hsl(215, 51%, 70%);
     font-weight: 200;
     font-size: 18px;
@@ -110,7 +110,7 @@ h2:hover, span:hover {
 
 .image-link::after{
     content: '';
-    background: url(.././images/icon-view.svg) no-repeat center;
+    background: url(./images/icon-view.svg) no-repeat center;
     position: absolute;
     width: 100%;
     height: 100%;
