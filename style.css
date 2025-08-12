@@ -1,0 +1,127 @@
+main{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: hsl(216, 50%, 16%);
+    border: 1px solid hsl(215, 32%, 27%);
+    border-radius: 20px;
+
+    width: 30%;
+    height: 45%;
+
+    padding: 40px;
+}
+
+div .creator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.creator img{
+    width: 30px;
+    height: 30px;
+}
+
+.creator {
+    width: 100%;
+    padding: 5% 0px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.nft {
+    width: 100%;
+}
+
+
+.image-link {
+    position: relative;
+    display: flex;
+}
+
+h2, p{
+    margin-top: 5%;
+}
+
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2, p, li, span{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+h2, span{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+p, .time{
+    color: hsl(215, 51%, 70%);
+    font-weight: 200;
+    font-size: 18px;
+}
+
+h2:hover, span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+ .image-link::before{
+
+    content: '';
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+    display: none;
+
+}
+
+.image-link::after{
+    content: '';
+    background: url(.././images/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+.image-link:hover::before, .image-link:hover::after{
+    display: block;
+}
+
+
+
+
